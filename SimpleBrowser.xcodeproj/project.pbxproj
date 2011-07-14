@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD66888713CF2DB7003327E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD66888613CF2DB7003327E8 /* Cocoa.framework */; };
+		DD66889113CF2DB7003327E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD66888F13CF2DB7003327E8 /* InfoPlist.strings */; };
+		DD66889413CF2DB7003327E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD66889313CF2DB7003327E8 /* main.m */; };
+		DD66889713CF2DB7003327E8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DD66889513CF2DB7003327E8 /* Credits.rtf */; };
+		DD66889A13CF2DB7003327E8 /* SimpleBrowserAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD66889913CF2DB7003327E8 /* SimpleBrowserAppDelegate.m */; };
+		DD66889D13CF2DB7003327E8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD66889B13CF2DB7003327E8 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DD66888213CF2DB7003327E8 /* SimpleBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD66888613CF2DB7003327E8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DD66888913CF2DB7003327E8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DD66888A13CF2DB7003327E8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DD66888B13CF2DB7003327E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DD66888E13CF2DB7003327E8 /* SimpleBrowser-Info.plist */ = {isa = PBXFileReference; path = "SimpleBrowser-Info.plist"; sourceTree = "<group>"; };
+		DD66889013CF2DB7003327E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD66889213CF2DB7003327E8 /* SimpleBrowser-Prefix.pch */ = {isa = PBXFileReference; path = "SimpleBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		DD66889313CF2DB7003327E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD66889613CF2DB7003327E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		DD66889813CF2DB7003327E8 /* SimpleBrowserAppDelegate.h */ = {isa = PBXFileReference; path = SimpleBrowserAppDelegate.h; sourceTree = "<group>"; };
+		DD66889913CF2DB7003327E8 /* SimpleBrowserAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleBrowserAppDelegate.m; sourceTree = "<group>"; };
+		DD66889C13CF2DB7003327E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD66887F13CF2DB7003327E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD66888713CF2DB7003327E8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD66887713CF2DB7003327E8 = {
+			isa = PBXGroup;
+			children = (
+				DD66888C13CF2DB7003327E8 /* SimpleBrowser */,
+				DD66888513CF2DB7003327E8 /* Frameworks */,
+				DD66888313CF2DB7003327E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD66888313CF2DB7003327E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD66888213CF2DB7003327E8 /* SimpleBrowser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD66888513CF2DB7003327E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD66888613CF2DB7003327E8 /* Cocoa.framework */,
+				DD66888813CF2DB7003327E8 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD66888813CF2DB7003327E8 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD66888913CF2DB7003327E8 /* AppKit.framework */,
+				DD66888A13CF2DB7003327E8 /* CoreData.framework */,
+				DD66888B13CF2DB7003327E8 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DD66888C13CF2DB7003327E8 /* SimpleBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				DD66889813CF2DB7003327E8 /* SimpleBrowserAppDelegate.h */,
+				DD66889913CF2DB7003327E8 /* SimpleBrowserAppDelegate.m */,
+				DD66889B13CF2DB7003327E8 /* MainMenu.xib */,
+				DD66888D13CF2DB7003327E8 /* Supporting Files */,
+			);
+			path = SimpleBrowser;
+			sourceTree = "<group>";
+		};
+		DD66888D13CF2DB7003327E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD66888E13CF2DB7003327E8 /* SimpleBrowser-Info.plist */,
+				DD66888F13CF2DB7003327E8 /* InfoPlist.strings */,
+				DD66889213CF2DB7003327E8 /* SimpleBrowser-Prefix.pch */,
+				DD66889313CF2DB7003327E8 /* main.m */,
+				DD66889513CF2DB7003327E8 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD66888113CF2DB7003327E8 /* SimpleBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD6688A013CF2DB7003327E8 /* Build configuration list for PBXNativeTarget "SimpleBrowser" */;
+			buildPhases = (
+				DD66887E13CF2DB7003327E8 /* Sources */,
+				DD66887F13CF2DB7003327E8 /* Frameworks */,
+				DD66888013CF2DB7003327E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleBrowser;
+			productName = SimpleBrowser;
+			productReference = DD66888213CF2DB7003327E8 /* SimpleBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD66887913CF2DB7003327E8 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = DD66887C13CF2DB7003327E8 /* Build configuration list for PBXProject "SimpleBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DD66887713CF2DB7003327E8;
+			productRefGroup = DD66888313CF2DB7003327E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD66888113CF2DB7003327E8 /* SimpleBrowser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD66888013CF2DB7003327E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD66889113CF2DB7003327E8 /* InfoPlist.strings in Resources */,
+				DD66889713CF2DB7003327E8 /* Credits.rtf in Resources */,
+				DD66889D13CF2DB7003327E8 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD66887E13CF2DB7003327E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD66889413CF2DB7003327E8 /* main.m in Sources */,
+				DD66889A13CF2DB7003327E8 /* SimpleBrowserAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD66888F13CF2DB7003327E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD66889013CF2DB7003327E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DD66889513CF2DB7003327E8 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD66889613CF2DB7003327E8 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		DD66889B13CF2DB7003327E8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD66889C13CF2DB7003327E8 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD66889E13CF2DB7003327E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DD66889F13CF2DB7003327E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DD6688A113CF2DB7003327E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleBrowser/SimpleBrowser-Prefix.pch";
+				INFOPLIST_FILE = "SimpleBrowser/SimpleBrowser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DD6688A213CF2DB7003327E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleBrowser/SimpleBrowser-Prefix.pch";
+				INFOPLIST_FILE = "SimpleBrowser/SimpleBrowser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD66887C13CF2DB7003327E8 /* Build configuration list for PBXProject "SimpleBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD66889E13CF2DB7003327E8 /* Debug */,
+				DD66889F13CF2DB7003327E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD6688A013CF2DB7003327E8 /* Build configuration list for PBXNativeTarget "SimpleBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD6688A113CF2DB7003327E8 /* Debug */,
+				DD6688A213CF2DB7003327E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD66887913CF2DB7003327E8 /* Project object */;
+}
