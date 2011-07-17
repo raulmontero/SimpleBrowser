@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD34FFE813D37A5400CC41F9 /* BrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD34FFE713D37A5400CC41F9 /* BrowserController.m */; };
 		DD66888713CF2DB7003327E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD66888613CF2DB7003327E8 /* Cocoa.framework */; };
 		DD66889113CF2DB7003327E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD66888F13CF2DB7003327E8 /* InfoPlist.strings */; };
 		DD66889413CF2DB7003327E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD66889313CF2DB7003327E8 /* main.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD34FFE613D37A5400CC41F9 /* BrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserController.h; sourceTree = "<group>"; };
+		DD34FFE713D37A5400CC41F9 /* BrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserController.m; sourceTree = "<group>"; };
 		DD66888213CF2DB7003327E8 /* SimpleBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD66888613CF2DB7003327E8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DD66888913CF2DB7003327E8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -88,6 +91,8 @@
 			children = (
 				DD66889813CF2DB7003327E8 /* SimpleBrowserAppDelegate.h */,
 				DD66889913CF2DB7003327E8 /* SimpleBrowserAppDelegate.m */,
+				DD34FFE613D37A5400CC41F9 /* BrowserController.h */,
+				DD34FFE713D37A5400CC41F9 /* BrowserController.m */,
 				DD66889B13CF2DB7003327E8 /* MainMenu.xib */,
 				DD66888D13CF2DB7003327E8 /* Supporting Files */,
 			);
@@ -168,6 +173,7 @@
 			files = (
 				DD66889413CF2DB7003327E8 /* main.m in Sources */,
 				DD66889A13CF2DB7003327E8 /* SimpleBrowserAppDelegate.m in Sources */,
+				DD34FFE813D37A5400CC41F9 /* BrowserController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +290,7 @@
 				DD6688A213CF2DB7003327E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
