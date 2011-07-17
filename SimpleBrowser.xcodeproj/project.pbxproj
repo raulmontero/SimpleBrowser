@@ -13,6 +13,7 @@
 		DD66889713CF2DB7003327E8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DD66889513CF2DB7003327E8 /* Credits.rtf */; };
 		DD66889A13CF2DB7003327E8 /* SimpleBrowserAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD66889913CF2DB7003327E8 /* SimpleBrowserAppDelegate.m */; };
 		DD66889D13CF2DB7003327E8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD66889B13CF2DB7003327E8 /* MainMenu.xib */; };
+		DD6688A413CF33E0003327E8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD6688A313CF33E0003327E8 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +22,15 @@
 		DD66888913CF2DB7003327E8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		DD66888A13CF2DB7003327E8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		DD66888B13CF2DB7003327E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		DD66888E13CF2DB7003327E8 /* SimpleBrowser-Info.plist */ = {isa = PBXFileReference; path = "SimpleBrowser-Info.plist"; sourceTree = "<group>"; };
+		DD66888E13CF2DB7003327E8 /* SimpleBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleBrowser-Info.plist"; sourceTree = "<group>"; };
 		DD66889013CF2DB7003327E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DD66889213CF2DB7003327E8 /* SimpleBrowser-Prefix.pch */ = {isa = PBXFileReference; path = "SimpleBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		DD66889213CF2DB7003327E8 /* SimpleBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleBrowser-Prefix.pch"; sourceTree = "<group>"; };
 		DD66889313CF2DB7003327E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DD66889613CF2DB7003327E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		DD66889813CF2DB7003327E8 /* SimpleBrowserAppDelegate.h */ = {isa = PBXFileReference; path = SimpleBrowserAppDelegate.h; sourceTree = "<group>"; };
+		DD66889813CF2DB7003327E8 /* SimpleBrowserAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleBrowserAppDelegate.h; sourceTree = "<group>"; };
 		DD66889913CF2DB7003327E8 /* SimpleBrowserAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleBrowserAppDelegate.m; sourceTree = "<group>"; };
 		DD66889C13CF2DB7003327E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DD6688A313CF33E0003327E8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD6688A413CF33E0003327E8 /* WebKit.framework in Frameworks */,
 				DD66888713CF2DB7003327E8 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +66,7 @@
 		DD66888513CF2DB7003327E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD6688A313CF33E0003327E8 /* WebKit.framework */,
 				DD66888613CF2DB7003327E8 /* Cocoa.framework */,
 				DD66888813CF2DB7003327E8 /* Other Frameworks */,
 			);
@@ -236,6 +240,7 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleBrowser/SimpleBrowser-Prefix.pch";
 				INFOPLIST_FILE = "SimpleBrowser/SimpleBrowser-Info.plist";
@@ -251,6 +256,7 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleBrowser/SimpleBrowser-Prefix.pch";
 				INFOPLIST_FILE = "SimpleBrowser/SimpleBrowser-Info.plist";
