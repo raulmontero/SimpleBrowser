@@ -21,7 +21,7 @@
 @property (nonatomic, retain) IBOutlet NSTextField *UrlTextField;
 @property (nonatomic, retain) IBOutlet NSButton *ForwardButton;
 @property (nonatomic, retain) IBOutlet NSButton *BackButton;
-
+@property (nonatomic, retain) IBOutlet NSProgressIndicator *spinner;
 
 - (IBAction) goForward:(id) sender;
 - (IBAction) goBack:(id) sender;

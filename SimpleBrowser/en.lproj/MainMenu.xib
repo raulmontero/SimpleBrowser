@@ -28,6 +28,7 @@
 			<string>NSMenuItem</string>
 			<string>NSTextFieldCell</string>
 			<string>WebView</string>
+			<string>NSProgressIndicator</string>
 			<string>NSButtonCell</string>
 			<string>NSButton</string>
 			<string>NSCustomObject</string>
@@ -1334,7 +1335,7 @@
 			<object class="NSWindowTemplate" id="972006081">
 				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{335, 390}, {480, 360}}</string>
+				<string key="NSWindowRect">{{335, 390}, {522, 366}}</string>
 				<int key="NSWTFlags">1954021376</int>
 				<string key="NSWindowTitle">SimpleBrowser</string>
 				<string key="NSWindowClass">NSWindow</string>
@@ -1348,7 +1349,7 @@
 						<object class="NSTextField" id="846782244">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">270</int>
-							<string key="NSFrame">{{20, 318}, {277, 22}}</string>
+							<string key="NSFrame">{{20, 324}, {277, 22}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="515429354"/>
@@ -1387,7 +1388,7 @@
 						<object class="NSButton" id="515429354">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">265</int>
-							<string key="NSFrame">{{305, 321}, {78, 19}}</string>
+							<string key="NSFrame">{{305, 327}, {78, 19}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="19713019"/>
@@ -1413,10 +1414,10 @@
 						<object class="NSButton" id="19713019">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">265</int>
-							<string key="NSFrame">{{391, 321}, {75, 19}}</string>
+							<string key="NSFrame">{{391, 327}, {75, 19}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="267745736"/>
+							<reference key="NSNextKeyView" ref="567738673"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="1063525294">
 								<int key="NSCellFlags">-1543373312</int>
@@ -1456,7 +1457,7 @@
 									<string>public.url-name</string>
 								</object>
 							</object>
-							<string key="NSFrame">{{20, 20}, {446, 290}}</string>
+							<string key="NSFrame">{{20, 26}, {482, 290}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView"/>
@@ -1483,8 +1484,19 @@
 							<bool key="UseBackForwardList">YES</bool>
 							<bool key="AllowsUndo">YES</bool>
 						</object>
+						<object class="NSProgressIndicator" id="567738673">
+							<reference key="NSNextResponder" ref="439893737"/>
+							<int key="NSvFlags">1289</int>
+							<object class="NSPSMatrix" key="NSDrawMatrix"/>
+							<string key="NSFrame">{{486, 329}, {16, 16}}</string>
+							<reference key="NSSuperview" ref="439893737"/>
+							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView" ref="267745736"/>
+							<int key="NSpiFlags">28938</int>
+							<double key="NSMaxValue">100</double>
+						</object>
 					</object>
-					<string key="NSFrame">{{7, 11}, {480, 360}}</string>
+					<string key="NSFrame">{{7, 11}, {522, 366}}</string>
 					<reference key="NSSuperview"/>
 					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="846782244"/>
@@ -2242,6 +2254,22 @@
 					</object>
 					<int key="connectionID">552</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">frameLoadDelegate</string>
+						<reference key="source" ref="267745736"/>
+						<reference key="destination" ref="289019708"/>
+					</object>
+					<int key="connectionID">553</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">spinner</string>
+						<reference key="source" ref="289019708"/>
+						<reference key="destination" ref="567738673"/>
+					</object>
+					<int key="connectionID">555</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -2801,6 +2829,7 @@
 							<reference ref="515429354"/>
 							<reference ref="19713019"/>
 							<reference ref="267745736"/>
+							<reference ref="567738673"/>
 						</object>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -3342,6 +3371,12 @@
 						<reference key="object" ref="289019708"/>
 						<reference key="parent" ref="0"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">554</int>
+						<reference key="object" ref="567738673"/>
+						<reference key="parent" ref="439893737"/>
+						<string key="objectName">Async Arrows</string>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -3575,6 +3610,7 @@
 					<string>538.IBPluginDependency</string>
 					<string>539.IBPluginDependency</string>
 					<string>544.IBPluginDependency</string>
+					<string>554.IBPluginDependency</string>
 					<string>56.IBPluginDependency</string>
 					<string>56.ImportedFromIB2</string>
 					<string>57.IBEditorWindowLastContentRect</string>
@@ -3840,6 +3876,7 @@
 					<string>com.apple.WebKitIBPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>{{286, 129}, {275, 183}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3887,7 +3924,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">552</int>
+			<int key="maxID">555</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -3942,6 +3979,7 @@
 							<string>ForwardButton</string>
 							<string>UrlTextField</string>
 							<string>myWebView</string>
+							<string>spinner</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -3949,6 +3987,7 @@
 							<string>NSButton</string>
 							<string>NSTextField</string>
 							<string>WebView</string>
+							<string>NSProgressIndicator</string>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -3959,6 +3998,7 @@
 							<string>ForwardButton</string>
 							<string>UrlTextField</string>
 							<string>myWebView</string>
+							<string>spinner</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -3977,6 +4017,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">myWebView</string>
 								<string key="candidateClassName">WebView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">spinner</string>
+								<string key="candidateClassName">NSProgressIndicator</string>
 							</object>
 						</object>
 					</object>

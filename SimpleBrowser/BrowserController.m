@@ -11,8 +11,11 @@
 
 @implementation BrowserController
 
-@synthesize BackButton,ForwardButton,UrlTextField,myWebView;
+@synthesize BackButton,ForwardButton,UrlTextField,myWebView,spinner;
 
+
+#pragma mark --
+#pragma mark Controller utility methods
 
 - (void) resetButtons
 {
@@ -20,39 +23,70 @@
     [self.ForwardButton setEnabled:[self.myWebView canGoForward]];
 }
 
-- (void) awakeFromNib
-{
-    [self.UrlTextField setStringValue:@"http://pragprog.com"];
-    [self goUrl:self.UrlTextField];
-}
+#pragma mar --
+#pragma mark Initialization
 
 - (id)init
 {
     self = [super init];
     if (self) {
-        // Initialization code here.
+    // Initialization code here.
     }
     
     return self;
 }
 
+- (void) awakeFromNib /* método que se lanza una vez se ha cargado el fichero nib */
+{
+    [self.UrlTextField setStringValue:@"http://pragprog.com"];
+    [self goUrl:self.UrlTextField];
+}
+
+#pragma mark --
+#pragma mark IBAction methods
+
 - (IBAction) goBack:(id)sender
 {
     [myWebView goBack:sender];
-    [self resetButtons];
+    //[self resetButtons];
 }
 
 - (IBAction) goForward:(id)sender
 {
     [myWebView goForward:sender];
-    [self resetButtons];
+    //[self resetButtons];
 }
 
 - (IBAction) goUrl: (id) sender;
 {
     [self.myWebView takeStringURLFrom:sender];
+    //[self resetButtons];
+}
+
+
+
+#pragma mark --
+#pragma mark Webview Delegate methods
+
+- (void) webView:(WebView *)sender didReceiveTitle:(NSString *)title forFrame:(WebFrame *)frame
+{
+    [[myWebView window] setTitle:title]; //el método window devuelve el "window" que contiene a la view.
+}
+
+-(void) webView:(WebView *)sender didStartProvisionalLoadForFrame:(WebFrame *)frame
+{
+    [self.spinner startAnimation:sender];
+}
+
+- (void) webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame
+{
+    [self.spinner stopAnimation:sender];
     [self resetButtons];
 }
+
+#pragma mark --
+#pragma mark Memory Management
+
 
 - (void)dealloc
 {
