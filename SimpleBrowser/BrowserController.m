@@ -47,13 +47,13 @@
 
 - (IBAction) goBack:(id)sender
 {
-    [myWebView goBack:sender];
+    [myWebView goBack];
     //[self resetButtons];
 }
 
 - (IBAction) goForward:(id)sender
 {
-    [myWebView goForward:sender];
+    [myWebView goForward];
     //[self resetButtons];
 }
 
@@ -63,8 +63,6 @@
     //[self resetButtons];
 }
 
-
-
 #pragma mark --
 #pragma mark Webview Delegate methods
 
@@ -72,6 +70,7 @@
 {
     [[myWebView window] setTitle:title]; //el método window devuelve el "window" que contiene a la view.
 }
+
 
 -(void) webView:(WebView *)sender didStartProvisionalLoadForFrame:(WebFrame *)frame
 {
@@ -81,6 +80,7 @@
 - (void) webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame
 {
     [self.spinner stopAnimation:sender];
+    [self.UrlTextField setStringValue:[sender mainFrameURL]];
     [self resetButtons];
 }
 
